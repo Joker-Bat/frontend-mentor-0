@@ -1,0 +1,154 @@
+/* For Mobile first */
+* {
+  box-sizing: border-box;
+}
+
+.head {
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.light {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.intro {
+  font-family: 'Raleway', sans-serif;
+  line-height: 2;
+}
+
+.container {
+  position: relative;
+}
+
+.box-head {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.box-text {
+  font-family: 'Raleway', sans-serif;
+}
+
+.box {
+  position: relative;
+  width: 60%;
+  padding: 20px;
+  margin: 50px auto;
+  box-shadow: 2px 3px rgb(222, 220, 209);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  /* display: table; */
+}
+
+.box:hover {
+  box-shadow: 3px 4px rgba(222, 220, 209,.7);
+  transform: translateY(-5px);
+}
+
+.box-1 {
+  border-top: 5px solid rgb(255, 97, 48);
+}
+
+.box-2 {
+  border-top: 5px solid rgb(48, 255, 141);
+}
+
+.box-3 {
+  border-top: 5px solid rgb(48, 131, 255);
+}
+
+.box-4 {
+  border-top: 5px solid rgb(255, 231, 48);
+}
+
+.svg {
+  width: 4rem;
+  height: 4rem;
+  float: right;
+  /* display: table-cell; */  /* if you use this then use "display: table" in box*/
+}
+
+
+/* For Tablet */
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 100%;
+    height: 40rem;
+    padding: 5%;
+    position: relative;
+  }
+
+  .box {
+    position: absolute;
+    width: 40%;
+    float: left;
+    margin: 20px;
+    height: 40%;
+  }
+
+  .box-1 {
+    top: 0;
+  }
+
+  .box-2 {
+    top: 0;
+    left: 50%;
+  }
+
+  .box-3 {
+    top: 50%;
+  }
+
+  .box-4 {
+    top: 50%;
+    left: 50%;
+  }
+}
+
+/* For Desktops */
+@media only screen and (min-width: 850px) {
+  .container {
+    width: 100%;
+    height: 40rem;
+    padding: 5%;
+    position: relative;
+  }
+
+  .box {
+    position: absolute;
+    width: 25%;
+    float: left;
+    margin: 20px;
+    height: 40%;
+  }
+
+  .box-1 {
+    top: 20%;
+    left: 6%;
+  }
+
+  .box-2 {
+    top: 0;
+    left: 35%;
+  }
+
+  .box-3 {
+    top: 45%;
+    left: 35%;
+  }
+
+  .box-4 {
+    top: 20%;
+    left: 64%;
+  }
+}
